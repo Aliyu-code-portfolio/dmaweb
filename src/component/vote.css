@@ -1,0 +1,51 @@
+.big-circle{
+    background-color: yellowgreen;
+    height:calc(240px + 2vmin);
+    width:calc(240px + 2vmin);
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    
+  }
+  .small-circle{
+    background-color: rgb(245, 243, 243);
+    height:calc(100px + 2vmin);
+    width:calc(100px + 2vmin);
+    display: inline-block;
+    margin: 0 auto;
+    padding: calc(10px + 2vmin);
+    border-radius: 100%;
+    margin: 50px;
+    text-align: center;
+    justify-content:center;
+
+  }
+  h4{
+      color: #282c34;;
+      text-shadow: 2px 2px white;
+
+  }
+  .vote{
+      display:flex;
+      justify-content:space-between;
+      flex-direction: row;
+  }
+  .divButton{
+    border-radius:100;
+    border-width:1
+  }
+  .button{
+    background-color:rgb(245, 243, 243);
+    border-width: 0;
+  }
+  .pressedLike{
+    color: green;
+     border-width: 0;   
+  }
+  .pressedDislike{
+    color: red;
+     border-width: 0;   
+   
+  }
+  
+  

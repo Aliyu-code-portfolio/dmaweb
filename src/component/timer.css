@@ -1,0 +1,12 @@
+.timer{
+    display: flex;
+    flex-direction: row;
+
+}
+.title{
+    font-size: calc(5px + 2vmin);
+}
+.container{
+    justify-content:center;
+    align-items: center;
+}
