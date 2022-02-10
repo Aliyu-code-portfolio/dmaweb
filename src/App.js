@@ -9,6 +9,8 @@ import { Support } from './pages/support';
 import { About } from './pages/about';
 import Media from 'react-media';
 
+
+//remaining addition to support, about pages 
 function App() {
   const firebaseConfig = {
     apiKey: "AIzaSyBNN1t82sFc-CWUyyW8Mpsmo4zQnqot63s",

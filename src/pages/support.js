@@ -1,6 +1,6 @@
 import './support.css';
 import Media from 'react-media';
-
+import { IoWalletOutline } from "react-icons/io5";
 
 export const Support = () => {
     return (
@@ -14,11 +14,12 @@ export const Support = () => {
                             <p>There are key task that one should perform to ensure we make this mission possible. Some of the tasks include:</p>
                             <ul>
                                 <li>Spreading the word to your family and friends</li>
-                                <li>Volunteering to Dr. Musa Campaign efforts by emailing <span><a className='a' href="mailto:dmagroupng@gmail.com">dmagroupng@gmail.com</a></span></li>
+                                <li>Volunteering to Dr. Musa Campaign efforts by emailing <span><a className='a' target="_blank" rel="noreferrer" href="mailto:dmagroupng@gmail.com">dmagroupng@gmail.com</a></span></li>
                                 <li>Attending Dr. Musa Adamu campaign rally to understand our vision</li>
                                 <li>Making sure you vote for Dr. Musa Adamu during the election</li>
                             </ul>
-                            <p>Do you want to support the cause through donation?</p>
+                            <p className='titleMobile'>Do you want to support the cause through donation? <a className='a' href='https://www.airfunding.net/s/8c180e9b-148b-4e59-9b75-4a0867b2c49b'><IoWalletOutline />  Support us here <IoWalletOutline /> </a></p>
+
                         </div>
 
                     </div>
@@ -34,7 +35,7 @@ export const Support = () => {
                                 <li>Attending Dr. Musa Adamu campaign rally to understand our vision</li>
                                 <li>Making sure you vote for Dr. Musa Adamu during the election</li>
                             </ul>
-                            <p>Do you want to support the cause through donation?</p>
+                            <p>Do you want to support the cause through donation? <a className='a' target="_blank" rel="noreferrer" href='https://www.airfunding.net/s/8c180e9b-148b-4e59-9b75-4a0867b2c49b'><IoWalletOutline />  Support us here <IoWalletOutline /> </a></p>
                         </div>
 
                     </div>
