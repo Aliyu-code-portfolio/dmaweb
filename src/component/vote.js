@@ -22,8 +22,8 @@ export const Vote = () => {
     }, [])
 
     const data = (info) => {
-        let num = formatter.format(info)
-        setLikes(num)
+        //let num = formatter.format(info)
+        setLikes(info)
     }
     const vote = (type) => {
         if (type === 1) {
@@ -36,6 +36,7 @@ export const Vote = () => {
         else if (type === 2) {
             if (!dislike) {
                 setIsLiked(false)
+                setLikes(likes - 1)
                 setDislike(true)
             }
         }
@@ -45,7 +46,7 @@ export const Vote = () => {
             <div className='big-circle'>
                 <div className='small-circle'>
                     {likes ?
-                        <h4>{likes} likes</h4> : <Sentry size={25} />}
+                        <h4>{formatter.format(likes)} likes</h4> : <Sentry size={25} />}
                     <div className='vote'>
                         <button className={isLiked ? 'pressedLike' : 'button'} onClick={() => vote(1)}>
                             <div className='divButton'><BsHandThumbsUp className={isLiked && 'pressedLike'} /> Like</div>
