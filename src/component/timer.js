@@ -56,10 +56,11 @@ export const Timer = () => {
         <Media queries={{ small: { maxWidth: 599 } }}>
             {matches =>
                 matches.small ? (
-                    <div className='timer'>
+                    <div className='timerMobile'>
                         {text ? <div className='name'>{text}</div> :
-                            <><div className='name'>Election :<code>&emsp;</code></div>
-                                <div className='time'> {days} days, {hours} hours, {minutes} minutes and {second} seconds.</div></>}
+                            // <code>&emsp;</code>
+                            <><div className='name'>Election countdown</div>
+                                <div className='time'> {days} days {hours} hours {minutes} minutes and {second} seconds.</div></>}
                     </div>
                 ) : (
                     <div className='timer'>

@@ -12,25 +12,22 @@
   width:100%;
   margin-bottom: 9%;
   align-items: center;
-  justify-content:space-between;
-  align-items: center;
 
 }
 .cardMobile{
-  height:60vh;
-  width: 100%;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   background-color: yellowgreen;
   align-items:center;
   margin: 50px;
+  padding-bottom: 3vh;
   border-color: white;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .footerMobile {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -71,7 +68,9 @@
   background-color: #282c34;
   max-width:100%;
   flex-direction: row;
-  /* position: fixed; */
+  /* position: fixed;
+  top:0;
+  left:0; */
   z-index:0;
   width: 100vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -85,7 +84,7 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between; 
   align-items: center;
-  font-size: calc(4px + 2vmin);
+  font-size: calc(2px + 2vmin);
   color: white;
 }
 h1{
@@ -104,7 +103,7 @@ h1{
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  
+  font-size: calc(3px + 2vmin);
 }
 
 a{
@@ -128,6 +127,10 @@ a:visited {
   display: inline;
   margin-right: 50px;
   color: white;
+}
+
+.pages{
+  /*margin-top: 15vh;*/
 }
 
 /* .body{

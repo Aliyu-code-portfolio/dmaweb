@@ -25,7 +25,7 @@ export const Home = () => {
             {matches =>
                 matches.small ? (
                     <div className='bodyMobile'>
-                        <div className='card'>
+                        <div className='cardMobile'>
                             <h2 className='title'>Upcoming Events</h2>
                             <hr />
                             <div className={info ? 'details' : 'activity'}>

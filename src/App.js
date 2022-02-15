@@ -51,7 +51,8 @@ function App() {
                   <Timer />
                 </div>
                 <div className='space2'>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>&copy;</code> Copyright 2022. All rights reserved
+                  <br />
+                  <code>&copy;</code> Copyright 2022. All rights reserved
             </div>
               </div>
             </div>
