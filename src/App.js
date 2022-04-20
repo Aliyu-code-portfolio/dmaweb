@@ -1,17 +1,26 @@
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-import { Home } from './pages/home'
-import { Timer } from './component/timer'
-import { NavBar } from './component/navbar'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Support } from './pages/support';
-import { About } from './pages/about';
-import Media from 'react-media';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./pages";
+import { About } from './pages/about'
+import { News } from './pages/news'
+import { Projects } from './pages/projects'
+import HeroSection from "./components/heroSection";
+import { Sidebar } from "./components/sidebar";
+import { Navbar } from "./components/navbar";
+import Footer from "./components/footer";
 
-
-//remaining addition to support, about pages 
+//backend, views count
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [info, setInfo] = useState(true);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   const firebaseConfig = {
     apiKey: "AIzaSyBNN1t82sFc-CWUyyW8Mpsmo4zQnqot63s",
     authDomain: "dma-5c98f.firebaseapp.com",
@@ -26,65 +35,27 @@ function App() {
     firebase.initializeApp(firebaseConfig);
   }
 
+  useEffect(() => {
+    document.title = "Home | DMA"
+  }, [])
   return (
     <Router>
-      <Media queries={{ small: { maxWidth: 599 } }}>
-        {matches =>
-          matches.small ? (
-            <div className="AppMobile">
-              <NavBar />
-              <div className='pages'>
-                <Switch>
-                  <Route exact path='/'>
-                    <Home />
-                  </Route>
-                  <Route exact path='/support'>
-                    <Support />
-                  </Route>
-                  <Route exact path='/about'>
-                    <About />
-                  </Route>
-                </Switch>
-              </div>
-              <div className='footerMobile'>
-                <div className='space1'>
-                  <Timer />
-                </div>
-                <div className='space2'>
-                  <br />
-                  <code>&copy;</code> Copyright 2022. All rights reserved
-            </div>
-              </div>
-            </div>
-          ) : (
-            <div className="App">
-              <NavBar />
-              <div className='pages'>
-                <Switch>
-                  <Route exact path='/'>
-                    <Home />
-                  </Route>
-                  <Route exact path='/support'>
-                    <Support />
-                  </Route>
-                  <Route exact path='/about'>
-                    <About />
-                  </Route>
-                </Switch>
-              </div>
-              <div className='footer'>
-                <div className='space1'>
-                  <Timer />
-                </div>
-                <div className='space2'>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>&copy;</code> Copyright 2022. All rights reserved
-            </div>
-              </div>
-            </div>
-          )
-        }
-      </Media>
-
+      <div className='bg-black'>
+        {info ?
+          <HeroSection change={setInfo} />
+          :
+          <>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
+            <Switch>
+              <Route exact path="/"  ><Home /></Route>
+              <Route exact path="/drmusa" ><About /></Route>
+              <Route exact path="/news" ><News /></Route>
+              <Route exact path="/projects"><Projects /></Route>
+            </Switch>
+            <Footer />
+          </>}
+      </div>
     </Router>
   );
 }
