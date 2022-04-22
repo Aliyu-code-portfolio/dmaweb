@@ -101,7 +101,7 @@ function Message() {
                                 <div className="col-12 pt-3 text-light mb-5">
                                     <button
                                         onClick={onClickButton}
-                                        className="btn btn-outline-primary"
+                                        className="btn btn-outline-light"
                                         type="submit"
                                     >
                                         {load ? <Bounce /> : 'Submit'}

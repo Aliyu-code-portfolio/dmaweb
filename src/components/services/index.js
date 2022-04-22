@@ -12,7 +12,7 @@ import Message from './message'
 function Contact({ id }) {
   return (
     <>
-      <InfoContainer id={id} className="bg-black">
+      <InfoContainer id={id} className="primary-bg">
         <InfoWrapper>
           <div className="row expand-row gx-10 ">
             <div className="flex-column  col-lg-5 col-sm-12 mt-lg-12">

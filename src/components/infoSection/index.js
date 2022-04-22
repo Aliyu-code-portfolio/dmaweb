@@ -7,7 +7,7 @@ import { ButtonBasic } from "../ButtonElements";
 export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
   return (
     <>
-      <InfoContainer id={id} className="bg-black">
+      <InfoContainer id={id} className="primary-bg">
         <InfoWrapper>
           <div className="row expand-row gx-5">
             <div className="col-lg-6 col-sm-12 my-auto">

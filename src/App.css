@@ -10,9 +10,13 @@
 
 .logo-text {
   font: "Josefin Sans";
+  text-align: left;
 
 }
 
+span{
+  color: green;
+}
 .center-align {
   text-align: center;
 }
@@ -28,8 +32,11 @@
 }
 
 .primary-bg {
-  background: #B05FFD;
+  background: green;
 
+}
+.primary-text{
+  color: green;
 }
 
 .h1-hero {
@@ -47,6 +54,7 @@
   }
 
 }
+
 .h2-hero {
   color: gray;
   font-size: 20px;
@@ -63,6 +71,19 @@
 
 }
 
+.h1-heroMob {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-textMob {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+
+}
 .hero-text {
   color: #fff;
   font-size: 24px;

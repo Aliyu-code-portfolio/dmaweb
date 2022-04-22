@@ -25,7 +25,7 @@ function Cards() {
             <InfoContainer id='45' className="bg-white">
                 <InfoWrapper>
                     <div className="d-flex align-items-center row expand-row gx-10 ">
-                        <div className={hover ? 'flex-row  col-lg-4 col-sm-12 text-success  bg-black mx-2 mb-5 shadow' : 'flex-row  col-lg-4 col-sm-12 text-light  bg-black mx-2 mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover}>
+                        <div className={hover ? 'flex-row  col-lg-4 col-sm-12 text-success  primary-bg mx-2 mb-5 shadow' : 'flex-row  col-lg-4 col-sm-12 text-light  primary-bg mx-2 mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover}>
                             <h2 className="text-center mt-5 mb-5">{info && info[0].title}</h2>
                             <div className='text-center'>
                                 <div className='mb-3 text-weight-bold'>{info && info[0].date}</div>
@@ -39,7 +39,7 @@ function Cards() {
                             </div>
                             <h3 className="text-center text-dark mb-5 ">Highlight 2</h3>
                         </div>
-                        <div className={hover ? 'flex-row  col-lg-4 col-sm-12 text-success bg-black mx-2 mb-5 shadow' : 'flex-row  col-lg-4 col-sm-12 text-light bg-black mx-2 mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover} >
+                        <div className={hover ? 'flex-row  col-lg-4 col-sm-12 text-success primary-bg mx-2 mb-5 shadow' : 'flex-row  col-lg-4 col-sm-12 text-light primary-bg mx-2 mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover} >
                             <h2 className="text-center mt-5 mb-5">{info && info[2].title}</h2>
                             <div className='text-center'>
                                 <div className=' mb-3 text-weight-bold'>{info && info[2].date}</div>
@@ -55,7 +55,7 @@ function Cards() {
                             </div>
                             <h3 className="text-center text-dark mb-5 ">Highlight 4</h3>
                         </div>
-                        <div className={hover ? 'flex-row  col-lg-3 col-sm-12 text-success bg-black mb-5 shadow' : 'flex-row  col-lg-3 col-sm-12 text-light bg-black mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover} >
+                        <div className={hover ? 'flex-row  col-lg-3 col-sm-12 text-success primary-bg mb-5 shadow' : 'flex-row  col-lg-3 col-sm-12 text-light primary-bg mb-5 shadow'} onMouseEnter={onHover} onMouseLeave={onHover} >
                             <h2 className="text-center  mt-5 mb-5">{info && info[4].title}</h2>
                             <div className='text-center'>
                                 <div className=' mb-3 text-weight-bold'>{info && info[4].date}</div>

@@ -33,7 +33,7 @@ export const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer className='bg-black' id='navbbar'>
           <NavLogo to="/">
-            <h1 className="logo-text">DMA Campaign</h1>
+            <h1 className="logo-text"><span>DMA</span> Campaign</h1>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
